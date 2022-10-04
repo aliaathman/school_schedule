@@ -1,5 +1,5 @@
 
-
+from school_schedule.student import Student
 #first instance
 quinn = Student(
                 "Quinn", 
@@ -31,10 +31,17 @@ claire = Student(
                     "Painting"
                 ]
             )
+ellis = Student(
+                "Ellis",
+                "Junior",
+                [
+                    "Painting"
+                ]
+)
 
 claire.get_num_classes()
 claire.summary()
-
+print(ellis.summary())
 # Extra:
 # - create a function that will return the student with more classes
 # - create a test for that function
